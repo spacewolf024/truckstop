@@ -1,0 +1,116 @@
+@font-face {font-family: "STARWARS";
+    src: url("https://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot"); /* IE9*/
+    src: url("https://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("https://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff2") format("woff2"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.woff") format("woff"), /* chrome firefox */
+    url("https://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/
+    url("https://db.onlinewebfonts.com/t/c00548f5d217ed324ae9096051927001.svg#STARWARS") format("svg"); /* iOS 4.1- */
+}
+
+body {
+    background: #000;
+    color: #fff;
+    font-family: "STARWARS";
+    text-transform: uppercase;
+}
+
+.home-link {
+    font-family: "STARWARS";
+    font-size: 60px;
+    color: #000;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow:
+		-1px -1px 0 #ffe81f,
+		1px -1px 0 #ffe81f,
+		-1px 1px 0 #ffe81f,
+		1px 1px 0 #ffe81f;
+}
+
+.info {
+    text-align: center;
+    letter-spacing: 0.07em;
+}
+
+.heading {
+    text-align: center;
+    margin-top: 24px;
+}
+
+hr {
+    border-bottom: solid 1px #ffe81f;
+}
+
+.instructions {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+
+    p {
+        font-size: 20px;
+    }
+}
+
+.characters {
+    text-align: center;
+}
+
+ul {
+    display: inline-block;
+    text-align: left;
+    border: solid 1px #ffe81f;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+li {
+    list-style: none;
+    padding: 10px 0 15px 0;
+
+    a {
+        letter-spacing: 0.1em;
+        font-size: 16px;
+        color: #ffe81f;
+        text-decoration: none; 
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    a:hover {
+        color: #fff;
+    }
+
+    a:visited {
+        color: #ffe81f;
+    }
+}
+
+.filmInfoTitle {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    .info {
+        text-align: center;
+        font-size: 16px;
+        letter-spacing: 0.07em;
+
+    }
+
+    .instructions {
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+        line-height: 20px;
+
+        p {
+            font-size: 1rem;
+            letter-spacing: 0.07em;
+        }
+    }
+}
